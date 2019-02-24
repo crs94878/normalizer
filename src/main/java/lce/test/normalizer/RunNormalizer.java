@@ -37,7 +37,7 @@ public class RunNormalizer extends JFrame{
             dataWriter.write(normalizeStr, newFilePath);
             System.out.println("Сохранили нормализованные данные в новый файл: " + newFilePath);
         }
-        catch (IOException ex){
+        catch (NullPointerException | IOException ex){
             System.out.println(ex.getMessage());
         }
         System.exit(0);
